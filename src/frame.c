@@ -292,7 +292,7 @@ See also `frame-live-p'.  */)
     case output_ns:
       return Qns;
     case output_wr:
-      return Qwr;
+      return Qx;		/*  Pertend that we are X while actually wr */
     default:
       emacs_abort ();
     }
