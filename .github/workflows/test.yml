@@ -179,7 +179,8 @@ jobs:
             - name: configure(webrender)
               if: ${{ matrix.build == 'webrender' }}
               run: |
-                  ./configure --enable-checking=glyphs --enable-rust-debug --with-webrender
+                echo "CFLAGS=$CFLAGS -lxcb-render -lxcb-xfixes -lxcb-shape" >> $GITHUB_ENV
+                ./configure --enable-checking=glyphs --enable-rust-debug --with-webrender
 
             - name: build
               run: |
