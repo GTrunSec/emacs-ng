@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="https://emacs-ng.github.io/emacs-ng/webrender/">
+        <link rel="canonical" href="https://emacs-ng.github.io/emacs-ng/package-management/">
       
       <link rel="shortcut icon" href="../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
     
     
       
-        <title>Webrender - Emacs NG - A new approach to Emacs</title>
+        <title>Package management - Emacs NG - A new approach to Emacs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#webrender" class="md-skip">
+        <a href="#built-in-emacs-lisp-packages" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Webrender
+              Package management
             
           </span>
         </div>
@@ -164,13 +164,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     </li>
@@ -196,12 +198,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../webrender/" class="md-tabs__link">
       Webrender
     </a>
   </li>
@@ -298,12 +298,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
       
       <label class="md-nav__link" for="__nav_1">
         Home
@@ -406,11 +408,69 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../package-management/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Package management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Package management
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#straightel" class="md-nav__link">
+    straight.el
+  </a>
+  
+    <nav class="md-nav" aria-label="straight.el">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-package" class="md-nav__link">
+    use-package
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -517,45 +577,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Webrender
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../webrender/" class="md-nav__link">
         Webrender
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#webrender" class="md-nav__link">
-    Webrender
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -695,6 +721,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -703,8 +731,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#webrender" class="md-nav__link">
-    Webrender
+  <a href="#straightel" class="md-nav__link">
+    straight.el
+  </a>
+  
+    <nav class="md-nav" aria-label="straight.el">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-package" class="md-nav__link">
+    use-package
   </a>
   
 </li>
@@ -721,18 +769,57 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/emacs-ng/emacs-ng/edit/master/docs/webrender.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/emacs-ng/emacs-ng/edit/master/docs/package-management.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Webrender</h1>
-                
-                <h2 id="webrender">Webrender<a class="headerlink" href="#webrender" title="Permanent link">#</a></h2>
-<p>Webrender rendering is a opt-in feature. You can enable it by this.</p>
-<div class="highlight"><pre><span></span><code>$ ./configure --with-webrender
+                <h1 id="built-in-emacs-lisp-packages">Built-in Emacs Lisp packages<a class="headerlink" href="#built-in-emacs-lisp-packages" title="Permanent link">#</a></h1>
+<p>emacs-ng distributed with more built-in Emacs Lisp packages than
+upstream GNU Emacs.  For now, we have
+<a href="https://github.com/raxod502/straight.el/tree/develop">straight.el</a>
+<code>08b0ecf</code> and <a href="https://github.com/jwiegley/use-package">use-package</a>
+<code>a7422fb</code> included.</p>
+<h2 id="straightel"><code>straight.el</code><a class="headerlink" href="#straightel" title="Permanent link">#</a></h2>
+<p>We are kind of using <code>straight.el</code> as an alternative of <code>package.el</code>,
+providing <code>ng-straight-bootstrap-at-startup</code>, <code>ng-bootstrap-straight</code>
+(as equipment of <code>package-enable-at-startup</code> and
+<code>package-initialize</code>).</p>
+<h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h3>
+<p>Emacs NG automatically bootstraps <code>straight.el</code> at startup if
+<code>ng-straight-bootstrap-at-startup</code> is set to <code>t</code>, the default value is
+<code>nil</code></p>
+<p>You must configure the built-in <code>straight.el</code> in the early init file,
+as the variable <code>ng-straight-bootstrap-at-startup</code> is read before
+loading the regular init file. There are some variables you may be
+interested in (some of them must be set <strong>before</strong> the bootstrap
+process, if they might affect how <code>straight.el</code> itself is loaded). You
+can find the details from <a href="https://github.com/raxod502/straight.el/tree/develop#getting-started">this
+section</a>
+of the <code>straight.el</code>'s documentation.</p>
+<p>To be compatible with upstream Emacs, you can place the following in
+your init-file:</p>
+<div class="highlight"><pre><span></span><code>(unless (fboundp &#39;ng-bootstrap-straight)
+  (defvar bootstrap-version)
+  (let ((bootstrap-file
+         (expand-file-name &quot;straight/repos/straight.el/bootstrap.el&quot; user-emacs-directory))
+        (bootstrap-version 5))
+    (unless (file-exists-p bootstrap-file)
+      (with-current-buffer
+          (url-retrieve-synchronously
+           &quot;https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el&quot;
+           &#39;silent &#39;inhibit-cookies)
+        (goto-char (point-max))
+        (eval-print-last-sexp)))
+    (load bootstrap-file nil &#39;nomessage)))
 </code></pre></div>
-<p>If you get "Couldn't find any available vsync extension" runtime panic, enabling 3D acceleration will fix it.</p>
+<p>For more detailed guide, please refer <a href="https://github.com/raxod502/straight.el/blob/develop/README.md">straight.el's
+READMD.md</a>.</p>
+<h2 id="use-package"><code>use-package</code><a class="headerlink" href="#use-package" title="Permanent link">#</a></h2>
+<p>There are also
+<a href="https://github.com/jwiegley/use-package/issues/282">discussions/efforts</a>
+to include <code>use-package</code> into upstream. Until then, we temporally
+included it with <code>emacs-ng</code>.</p>
                 
                   
                     
@@ -763,7 +850,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../js/architecture/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../build/nix-develop/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -772,19 +859,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Architecture
+              Nix Build / Develop
             </div>
           </div>
         </a>
       
       
-        <a href="../ng-module/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../js/using-deno/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Dynamic modules
+              Using Deno
             </div>
           </div>
           <div class="md-footer__button md-icon">
